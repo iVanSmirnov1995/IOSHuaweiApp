@@ -16,6 +16,10 @@
 		D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */; };
 		D31CA4261E899FDB00202DA3 /* IOSHuaweiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4251E899FDB00202DA3 /* IOSHuaweiAppTests.m */; };
 		D31CA4311E899FDC00202DA3 /* IOSHuaweiAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */; };
+		F5D813DE1E89A4B400A63E55 /* UserAccountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */; };
+		F5D813E11E89A9BF00A63E55 /* SupportStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */; };
+		F5D813E41E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */; };
+		F5D813E71E89AC6600A63E55 /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813E51E89AC6600A63E55 /* NewsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		D31CA42C1E899FDC00202DA3 /* IOSHuaweiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSHuaweiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSHuaweiAppUITests.m; sourceTree = "<group>"; };
 		D31CA4321E899FDC00202DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D813DD1E89A4B400A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserAccountStoryboard.storyboard; sourceTree = "<group>"; };
+		F5D813E01E89A9BF00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SupportStoryboard.storyboard; sourceTree = "<group>"; };
+		F5D813E31E89AB0A00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LocationHuaweiStoryboard.storyboard; sourceTree = "<group>"; };
+		F5D813E61E89AC6600A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewsStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
 				D31CA40F1E899FDB00202DA3 /* ViewController.m */,
 				D31CA4111E899FDB00202DA3 /* Main.storyboard */,
+				F5D813E81E89AD0B00A63E55 /* Storyboards */,
 				D31CA4171E899FDB00202DA3 /* Assets.xcassets */,
 				D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */,
 				D31CA41C1E899FDB00202DA3 /* Info.plist */,
@@ -141,6 +150,17 @@
 				D31CA4321E899FDC00202DA3 /* Info.plist */,
 			);
 			path = IOSHuaweiAppUITests;
+			sourceTree = "<group>";
+		};
+		F5D813E81E89AD0B00A63E55 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F5D813E51E89AC6600A63E55 /* NewsStoryboard.storyboard */,
+				F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */,
+				F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */,
+				F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D813E11E89A9BF00A63E55 /* SupportStoryboard.storyboard in Resources */,
+				F5D813E71E89AC6600A63E55 /* NewsStoryboard.storyboard in Resources */,
+				F5D813DE1E89A4B400A63E55 /* UserAccountStoryboard.storyboard in Resources */,
 				D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */,
+				F5D813E41E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard in Resources */,
 				D31CA4181E899FDB00202DA3 /* Assets.xcassets in Resources */,
 				D31CA4131E899FDB00202DA3 /* Main.storyboard in Resources */,
 			);
@@ -332,6 +356,38 @@
 				D31CA41A1E899FDB00202DA3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D813DD1E89A4B400A63E55 /* Base */,
+			);
+			name = UserAccountStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D813E01E89A9BF00A63E55 /* Base */,
+			);
+			name = SupportStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D813E31E89AB0A00A63E55 /* Base */,
+			);
+			name = LocationHuaweiStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D813E51E89AC6600A63E55 /* NewsStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D813E61E89AC6600A63E55 /* Base */,
+			);
+			name = NewsStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -520,6 +576,7 @@
 				D31CA4371E899FDC00202DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D31CA4381E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +585,7 @@
 				D31CA43A1E899FDC00202DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D31CA43B1E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +594,7 @@
 				D31CA43D1E899FDC00202DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
