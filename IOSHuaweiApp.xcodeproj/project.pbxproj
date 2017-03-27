@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D31CA40A1E899FDB00202DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4091E899FDB00202DA3 /* main.m */; };
+		D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40C1E899FDB00202DA3 /* AppDelegate.m */; };
+		D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40F1E899FDB00202DA3 /* ViewController.m */; };
+		D31CA4131E899FDB00202DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31CA4111E899FDB00202DA3 /* Main.storyboard */; };
+		D31CA4161E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4141E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld */; };
+		D31CA4181E899FDB00202DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31CA4171E899FDB00202DA3 /* Assets.xcassets */; };
+		D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */; };
+		D31CA4261E899FDB00202DA3 /* IOSHuaweiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4251E899FDB00202DA3 /* IOSHuaweiAppTests.m */; };
+		D31CA4311E899FDC00202DA3 /* IOSHuaweiAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D31CA4221E899FDB00202DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D31CA3FD1E899FDB00202DA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D31CA4041E899FDB00202DA3;
+			remoteInfo = IOSHuaweiApp;
+		};
+		D31CA42D1E899FDC00202DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D31CA3FD1E899FDB00202DA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D31CA4041E899FDB00202DA3;
+			remoteInfo = IOSHuaweiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D31CA4051E899FDB00202DA3 /* IOSHuaweiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSHuaweiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31CA4091E899FDB00202DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D31CA40B1E899FDB00202DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D31CA40C1E899FDB00202DA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D31CA40E1E899FDB00202DA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D31CA40F1E899FDB00202DA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D31CA4121E899FDB00202DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D31CA4151E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOSHuaweiApp.xcdatamodel; sourceTree = "<group>"; };
+		D31CA4171E899FDB00202DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D31CA41A1E899FDB00202DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D31CA41C1E899FDB00202DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31CA4211E899FDB00202DA3 /* IOSHuaweiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSHuaweiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31CA4251E899FDB00202DA3 /* IOSHuaweiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSHuaweiAppTests.m; sourceTree = "<group>"; };
+		D31CA4271E899FDB00202DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31CA42C1E899FDC00202DA3 /* IOSHuaweiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSHuaweiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSHuaweiAppUITests.m; sourceTree = "<group>"; };
+		D31CA4321E899FDC00202DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D31CA4021E899FDB00202DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA41E1E899FDB00202DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA4291E899FDC00202DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D31CA3FC1E899FDB00202DA3 = {
+			isa = PBXGroup;
+			children = (
+				D31CA4071E899FDB00202DA3 /* IOSHuaweiApp */,
+				D31CA4241E899FDB00202DA3 /* IOSHuaweiAppTests */,
+				D31CA42F1E899FDC00202DA3 /* IOSHuaweiAppUITests */,
+				D31CA4061E899FDB00202DA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D31CA4061E899FDB00202DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D31CA4051E899FDB00202DA3 /* IOSHuaweiApp.app */,
+				D31CA4211E899FDB00202DA3 /* IOSHuaweiAppTests.xctest */,
+				D31CA42C1E899FDC00202DA3 /* IOSHuaweiAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D31CA4071E899FDB00202DA3 /* IOSHuaweiApp */ = {
+			isa = PBXGroup;
+			children = (
+				D31CA40B1E899FDB00202DA3 /* AppDelegate.h */,
+				D31CA40C1E899FDB00202DA3 /* AppDelegate.m */,
+				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
+				D31CA40F1E899FDB00202DA3 /* ViewController.m */,
+				D31CA4111E899FDB00202DA3 /* Main.storyboard */,
+				D31CA4171E899FDB00202DA3 /* Assets.xcassets */,
+				D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */,
+				D31CA41C1E899FDB00202DA3 /* Info.plist */,
+				D31CA4141E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld */,
+				D31CA4081E899FDB00202DA3 /* Supporting Files */,
+			);
+			path = IOSHuaweiApp;
+			sourceTree = "<group>";
+		};
+		D31CA4081E899FDB00202DA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31CA4091E899FDB00202DA3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D31CA4241E899FDB00202DA3 /* IOSHuaweiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D31CA4251E899FDB00202DA3 /* IOSHuaweiAppTests.m */,
+				D31CA4271E899FDB00202DA3 /* Info.plist */,
+			);
+			path = IOSHuaweiAppTests;
+			sourceTree = "<group>";
+		};
+		D31CA42F1E899FDC00202DA3 /* IOSHuaweiAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */,
+				D31CA4321E899FDC00202DA3 /* Info.plist */,
+			);
+			path = IOSHuaweiAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D31CA4041E899FDB00202DA3 /* IOSHuaweiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31CA4351E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiApp" */;
+			buildPhases = (
+				D31CA4011E899FDB00202DA3 /* Sources */,
+				D31CA4021E899FDB00202DA3 /* Frameworks */,
+				D31CA4031E899FDB00202DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSHuaweiApp;
+			productName = IOSHuaweiApp;
+			productReference = D31CA4051E899FDB00202DA3 /* IOSHuaweiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D31CA4201E899FDB00202DA3 /* IOSHuaweiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31CA4381E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppTests" */;
+			buildPhases = (
+				D31CA41D1E899FDB00202DA3 /* Sources */,
+				D31CA41E1E899FDB00202DA3 /* Frameworks */,
+				D31CA41F1E899FDB00202DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31CA4231E899FDB00202DA3 /* PBXTargetDependency */,
+			);
+			name = IOSHuaweiAppTests;
+			productName = IOSHuaweiAppTests;
+			productReference = D31CA4211E899FDB00202DA3 /* IOSHuaweiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D31CA42B1E899FDC00202DA3 /* IOSHuaweiAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31CA43B1E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppUITests" */;
+			buildPhases = (
+				D31CA4281E899FDC00202DA3 /* Sources */,
+				D31CA4291E899FDC00202DA3 /* Frameworks */,
+				D31CA42A1E899FDC00202DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31CA42E1E899FDC00202DA3 /* PBXTargetDependency */,
+			);
+			name = IOSHuaweiAppUITests;
+			productName = IOSHuaweiAppUITests;
+			productReference = D31CA42C1E899FDC00202DA3 /* IOSHuaweiAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31CA3FD1E899FDB00202DA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Smirnov Ivan";
+				TargetAttributes = {
+					D31CA4041E899FDB00202DA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HVBFE6784D;
+						ProvisioningStyle = Automatic;
+					};
+					D31CA4201E899FDB00202DA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HVBFE6784D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D31CA4041E899FDB00202DA3;
+					};
+					D31CA42B1E899FDC00202DA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HVBFE6784D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D31CA4041E899FDB00202DA3;
+					};
+				};
+			};
+			buildConfigurationList = D31CA4001E899FDB00202DA3 /* Build configuration list for PBXProject "IOSHuaweiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D31CA3FC1E899FDB00202DA3;
+			productRefGroup = D31CA4061E899FDB00202DA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D31CA4041E899FDB00202DA3 /* IOSHuaweiApp */,
+				D31CA4201E899FDB00202DA3 /* IOSHuaweiAppTests */,
+				D31CA42B1E899FDC00202DA3 /* IOSHuaweiAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D31CA4031E899FDB00202DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */,
+				D31CA4181E899FDB00202DA3 /* Assets.xcassets in Resources */,
+				D31CA4131E899FDB00202DA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA41F1E899FDB00202DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA42A1E899FDC00202DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D31CA4011E899FDB00202DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31CA4161E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld in Sources */,
+				D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */,
+				D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */,
+				D31CA40A1E899FDB00202DA3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA41D1E899FDB00202DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31CA4261E899FDB00202DA3 /* IOSHuaweiAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31CA4281E899FDC00202DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31CA4311E899FDC00202DA3 /* IOSHuaweiAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D31CA4231E899FDB00202DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D31CA4041E899FDB00202DA3 /* IOSHuaweiApp */;
+			targetProxy = D31CA4221E899FDB00202DA3 /* PBXContainerItemProxy */;
+		};
+		D31CA42E1E899FDC00202DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D31CA4041E899FDB00202DA3 /* IOSHuaweiApp */;
+			targetProxy = D31CA42D1E899FDC00202DA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D31CA4111E899FDB00202DA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31CA4121E899FDB00202DA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D31CA41A1E899FDB00202DA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D31CA4331E899FDC00202DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D31CA4341E899FDC00202DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D31CA4361E899FDC00202DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D31CA4371E899FDC00202DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D31CA4391E899FDC00202DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSHuaweiApp.app/IOSHuaweiApp";
+			};
+			name = Debug;
+		};
+		D31CA43A1E899FDC00202DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSHuaweiApp.app/IOSHuaweiApp";
+			};
+			name = Release;
+		};
+		D31CA43C1E899FDC00202DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSHuaweiApp;
+			};
+			name = Debug;
+		};
+		D31CA43D1E899FDC00202DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HVBFE6784D;
+				INFOPLIST_FILE = IOSHuaweiAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IS.com.IOSHuaweiAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IOSHuaweiApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D31CA4001E899FDB00202DA3 /* Build configuration list for PBXProject "IOSHuaweiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31CA4331E899FDC00202DA3 /* Debug */,
+				D31CA4341E899FDC00202DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31CA4351E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31CA4361E899FDC00202DA3 /* Debug */,
+				D31CA4371E899FDC00202DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D31CA4381E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31CA4391E899FDC00202DA3 /* Debug */,
+				D31CA43A1E899FDC00202DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D31CA43B1E899FDC00202DA3 /* Build configuration list for PBXNativeTarget "IOSHuaweiAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31CA43C1E899FDC00202DA3 /* Debug */,
+				D31CA43D1E899FDC00202DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D31CA4141E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D31CA4151E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodel */,
+			);
+			currentVersion = D31CA4151E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodel */;
+			path = IOSHuaweiApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D31CA3FD1E899FDB00202DA3 /* Project object */;
+}
