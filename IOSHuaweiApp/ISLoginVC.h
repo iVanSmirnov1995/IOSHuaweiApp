@@ -20,4 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *infoButt;
 
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *textFeldAr;
+
+- (IBAction)goApp:(UIButton *)sender;
+
 @end

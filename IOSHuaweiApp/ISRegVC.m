@@ -127,7 +127,7 @@
             }else{
         
                 NSString* fName=textField.text;
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
             [textField resignFirstResponder];
             self.kayConst.constant=250.f;
@@ -148,4 +148,43 @@
 
 
 
+- (IBAction)regAction:(UIButton *)sender {
+    
+    NSInteger i=0;
+    for (UITextField* tf in self.textFildArr) {
+        
+        if ([tf.text isEqualToString:@""]) {
+            i++;
+        }
+        
+    }
+    
+    NSString* massage=@"";
+    if (i==0) {
+        massage=@"Вы успешно зарегистрированы";
+    }else
+        massage=@"Одно из полей не заполненно";
+    
+    
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@""
+                                  message:massage
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [alert dismissViewControllerAnimated:YES completion:nil];
+                             
+                         }];
+    
+    [alert addAction:ok];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+}
 @end

@@ -126,7 +126,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ise-I7-NNA" kind="presentation" modalTransitionStyle="flipHorizontal" id="zzG-ob-6mz"/>
+                                            <action selector="goApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcT-Ru-9LX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-CK-b6h">
@@ -183,6 +183,8 @@
                         <outlet property="loginButton" destination="pa7-pz-s5D" id="GOf-y3-Jbd"/>
                         <outlet property="password" destination="7pf-m5-zBJ" id="Mxl-hb-oD5"/>
                         <outlet property="regButton" destination="gku-hU-QHy" id="7xf-cS-5ra"/>
+                        <outletCollection property="textFeldAr" destination="R2B-3T-fwL" id="Df1-ot-fBj"/>
+                        <outletCollection property="textFeldAr" destination="7pf-m5-zBJ" id="g3P-4C-4Gc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -300,7 +302,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="N4Y-Kq-MmP">
             <objects>
-                <tabBarController id="Ise-I7-NNA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tab" id="Ise-I7-NNA" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Rc1-09-l0M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -462,6 +464,9 @@
                                         <state key="normal" title="Присоединяйтесь к Huawei">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regAction:" destination="Vu5-WK-5Cb" eventType="touchUpInside" id="WdZ-mv-pti"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqq-XV-0VU">
                                         <rect key="frame" x="56" y="188" width="263" height="31"/>
@@ -518,6 +523,10 @@
                         <outlet property="registButton" destination="VPF-Qo-xrk" id="Rd5-xE-QBq"/>
                         <outletCollection property="anTextFs" destination="sQB-yG-v4I" id="u5V-ti-yKO"/>
                         <outletCollection property="anTextFs" destination="lKs-Ti-E1L" id="u3g-Lz-ZUO"/>
+                        <outletCollection property="textFildArr" destination="CnU-8x-4lP" id="Wto-ME-q0g"/>
+                        <outletCollection property="textFildArr" destination="WIm-df-oC5" id="mVd-G4-imc"/>
+                        <outletCollection property="textFildArr" destination="sQB-yG-v4I" id="Qj1-QP-wPY"/>
+                        <outletCollection property="textFildArr" destination="lKs-Ti-E1L" id="9vG-Aq-mEf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zms-v7-S2I" sceneMemberID="firstResponder"/>

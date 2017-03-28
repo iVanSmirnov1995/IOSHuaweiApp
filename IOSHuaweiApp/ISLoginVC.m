@@ -95,10 +95,6 @@
     
     
     
-    
-    
-    
-    
     if ([textField isEqual:self.login]) {
         
         NSString* login=textField.text;
@@ -107,7 +103,7 @@
         
         NSString* password=textField.text;
         
-        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
             [textField resignFirstResponder];
             self.keyboardCost.constant=340.f;
@@ -125,4 +121,58 @@
     return YES;
 }
 
+- (IBAction)goApp:(UIButton *)sender {
+    
+    NSInteger i=0;
+    for (UITextField* tf in self.textFeldAr) {
+        
+        if ([tf.text isEqual:@""]) {
+            i++;
+        }
+        
+    }
+    
+    if (i==0) {
+        
+        UITabBarController* vc=[self.storyboard instantiateViewControllerWithIdentifier:@"tab"];
+        vc.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+        
+        [self presentViewController:vc animated:YES completion:^{
+            
+        }];
+        
+    }else{
+        
+       NSString* massage=@"Одно из полей не заполненно";
+        
+        
+        
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@""
+                                      message:massage
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [alert dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+        
+        [alert addAction:ok];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+}
 @end

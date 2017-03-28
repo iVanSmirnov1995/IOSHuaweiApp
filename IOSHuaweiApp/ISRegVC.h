@@ -21,5 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *regBut;
 @property (weak, nonatomic) IBOutlet UIButton *registButton;
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
+- (IBAction)regAction:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *textFildArr;
+
 
 @end
