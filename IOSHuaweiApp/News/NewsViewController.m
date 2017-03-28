@@ -13,6 +13,7 @@
 @interface NewsViewController () <UITableViewDelegate, UITableViewDataSource>
 {
     NSMutableArray *_modelArray;
+    NSDictionary *_newsDict;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *categoryChoose;
@@ -26,7 +27,8 @@
     self.title = @"Новости";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [self loadNews];
+    [self setNews];
+    [self loadNews:3];
     // Do any additional setup after loading the view.
 }
 
@@ -44,25 +46,47 @@
 }
 
 
-- (void) loadNews {
+-(void)setNews{
+    NSArray *titles = [NSArray arrayWithObjects:@"Huawei представила решения корпоративной беспроводной связи нового поколения\n2017-03-23", @"Huawei и SUSE представили операционную систему для сервера KunLun RAS 2.0\n2017-03-22", @"Huawei на CeBIT 2017: путем цифровой трансформации\n2017-03-22", @"Huawei вместе с партнерами создаст экосистему для общеотраслевой цифровой трансформации\n2017-03-15", @"Huawei представила возможности роста для развивающихся рынков\n2017-03-02", @"Совместное заявление по единым стандартам и единой экосистеме на Глобальном саммите по тестированию 5G\n2017-03-01", @"Компания Huawei получила награду Ассоциации GSM за вклад в 5G-эволюцию LTE-сетей\n2017-02-28", @"Huawei представила решение CloudMetro для ускорения облачной трансформации сетей\n2017-02-28", nil];
+    NSArray *images = [NSArray arrayWithObjects:@"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/cebit_corporate_wireless.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/huawei_suse_2017.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/cebit_2017_huawei.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/PartnerSummit2017.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/mwc2.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/5gsummit.jpg",@"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/5gevolution.jpg", @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/cloudmetro.jpg", nil];
+    //_newsDict = [[NSDictionary alloc] init];
+    _newsDict = [NSDictionary dictionaryWithObjectsAndKeys:titles, @"titles",images, @"images", nil];
+                       
+}
+
+
+- (void) loadNews:(NSInteger)j {
     if (_modelArray != nil){
         [_modelArray removeAllObjects];
     }
     _modelArray = [[NSMutableArray alloc] init];
-    NSString *title = @"Huawei представила решения корпоративной беспроводной связи нового поколения";
-        NSString *image = @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/cebit_corporate_wireless.jpg";
-    NewsModel *model = [[NewsModel alloc] initNews:title image:image];
-    [_modelArray addObject:model];
+    for (int i = 0; i<j; i++) {
+        NSString *title = [[_newsDict valueForKey:@"titles"] objectAtIndex:i];
+        NSString *image = [[_newsDict valueForKey:@"images"] objectAtIndex:i];
+        NewsModel *model = [[NewsModel alloc] initNews:title image:image];
+        [_modelArray addObject:model];
+    }
     
-    title = @"Huawei и SUSE представили операционную систему для сервера KunLun RAS 2.0";
-    image = @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/huawei_suse_2017.jpg";
-    NewsModel *model2 = [[NewsModel alloc] initNews:title image:image];
-    [_modelArray addObject:model2];
-    title = @"Huawei на CeBIT 2017: путем цифровой трансформации";
-    image = @"http://www-file.huawei.com/~/media/CORPORATE/Local-site/ru/Events/cebit_2017_huawei.jpg";
-    NewsModel *model3 = [[NewsModel alloc] initNews:title image:image];
-    [_modelArray addObject:model3];
 
+}
+- (IBAction)categoryChoosen:(id)sender {
+    UISegmentedControl *control = (UISegmentedControl *)sender;
+    switch (control.selectedSegmentIndex) {
+        case 0:
+            [self loadNews:3];
+            break;
+        case 1:
+            [self loadNews:6];
+            break;
+        case 2:
+            [self loadNews:8];
+            break;
+        default:
+            break;
+    }
+    
+    [self.tableView reloadData];
+    NSLog(@"%@",sender);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableViewMessege cellForRowAtIndexPath:(NSIndexPath *)indexPath {
