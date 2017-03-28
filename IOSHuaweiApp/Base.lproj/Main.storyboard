@@ -196,9 +196,14 @@
             <objects>
                 <navigationController id="Tgz-BX-1vb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="DHY-hS-1az"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vq3-Un-32k">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Vq3-Un-32k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="GhM-5G-Vcs" kind="relationship" relationship="rootViewController" id="9ng-Cu-6A4"/>
@@ -247,9 +252,13 @@
             <objects>
                 <navigationController id="Efv-Yv-gfT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="0ji-O2-sfJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t1W-6u-zkL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="t1W-6u-zkL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="2TK-9w-P0u" kind="relationship" relationship="rootViewController" id="oTm-x8-giO"/>
