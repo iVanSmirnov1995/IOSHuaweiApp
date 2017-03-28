@@ -55,7 +55,7 @@
     
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
-        self.kayConst.constant=150.f;
+        self.kayConst.constant=180.f;
         [self.view layoutIfNeeded];
         
         NSLog(@"gawrg");
@@ -87,7 +87,7 @@
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
             [textField resignFirstResponder];
-            self.kayConst.constant=300.f;
+            self.kayConst.constant=250.f;
             [self.view layoutIfNeeded];
             
             
