@@ -122,10 +122,7 @@
 				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
 				D31CA40F1E899FDB00202DA3 /* ViewController.m */,
 				D31CA4111E899FDB00202DA3 /* Main.storyboard */,
-				D34C89981E8A314F002CCD61 /* ISLoginVC.h */,
-				D34C89991E8A314F002CCD61 /* ISLoginVC.m */,
-				D34C899B1E8A338F002CCD61 /* ISRegVC.h */,
-				D34C899C1E8A338F002CCD61 /* ISRegVC.m */,
+				D3F06C591E8B03760032D04B /* login */,
 				F5D813E81E89AD0B00A63E55 /* Storyboards */,
 				D31CA4171E899FDB00202DA3 /* Assets.xcassets */,
 				D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */,
@@ -160,6 +157,17 @@
 				D31CA4321E899FDC00202DA3 /* Info.plist */,
 			);
 			path = IOSHuaweiAppUITests;
+			sourceTree = "<group>";
+		};
+		D3F06C591E8B03760032D04B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D34C89981E8A314F002CCD61 /* ISLoginVC.h */,
+				D34C89991E8A314F002CCD61 /* ISLoginVC.m */,
+				D34C899B1E8A338F002CCD61 /* ISRegVC.h */,
+				D34C899C1E8A338F002CCD61 /* ISRegVC.m */,
+			);
+			name = login;
 			sourceTree = "<group>";
 		};
 		F5D813E81E89AD0B00A63E55 /* Storyboards */ = {
