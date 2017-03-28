@@ -43,4 +43,66 @@
     }];
     
 }
+
+
+
+#pragma mark-UITextFieldDelegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    
+    
+    
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.kayConst.constant=150.f;
+        [self.view layoutIfNeeded];
+        
+        NSLog(@"gawrg");
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    
+    return YES;
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    
+    if ([textField isEqual:self.mailTF]) {
+        [self.passwordTF becomeFirstResponder];
+    } else
+        if([textField isEqual:self.passwordTF])
+        {
+            [self.nameTF becomeFirstResponder];
+        } else
+            if ([textField isEqual:self.nameTF]) {
+                
+               [self.fNameTF becomeFirstResponder];
+            }else{
+        
+        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            
+            [textField resignFirstResponder];
+            self.kayConst.constant=300.f;
+            [self.view layoutIfNeeded];
+            
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+        
+    }
+    
+    
+    return YES;
+}
+
+
+
+
 @end

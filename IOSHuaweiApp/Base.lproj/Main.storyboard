@@ -326,21 +326,17 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="242"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log" translatesAutoresizingMaskIntoConstraints="NO" id="Quv-yX-enk">
-                                        <rect key="frame" x="64" y="38" width="247" height="167"/>
+                                        <rect key="frame" x="137.5" y="34" width="100" height="175"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="167" id="7s0-MZ-GXw"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="KCD-pp-QJh"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="TiW-Xw-ncp"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstItem="Quv-yX-enk" firstAttribute="centerX" secondItem="ryD-X7-FlF" secondAttribute="centerX" id="6MZ-Br-D8M"/>
-                                    <constraint firstItem="Quv-yX-enk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ryD-X7-FlF" secondAttribute="top" constant="33" id="97e-w1-b4R"/>
                                     <constraint firstItem="Quv-yX-enk" firstAttribute="centerY" secondItem="ryD-X7-FlF" secondAttribute="centerY" id="M2S-Q4-wrU"/>
-                                    <constraint firstItem="Quv-yX-enk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ryD-X7-FlF" secondAttribute="leading" constant="64" id="MRU-IU-S68"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Quv-yX-enk" secondAttribute="bottom" constant="33" id="blc-jw-AKN"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Quv-yX-enk" secondAttribute="trailing" constant="64" id="uN4-5J-pYV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Quv-yX-enk" secondAttribute="bottom" constant="33" id="blc-jw-AKN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-20-rHv">
@@ -370,6 +366,7 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="2Jj-Lk-bOp" firstAttribute="width" secondItem="1ZL-pG-Rdm" secondAttribute="width" id="BjF-4M-FXq"/>
+                                    <constraint firstAttribute="height" constant="38" id="FTb-dE-zjJ"/>
                                     <constraint firstItem="1ZL-pG-Rdm" firstAttribute="top" secondItem="Zmq-20-rHv" secondAttribute="top" id="Jgl-hR-wZN"/>
                                     <constraint firstAttribute="trailing" secondItem="2Jj-Lk-bOp" secondAttribute="trailing" id="Juh-ao-mJl"/>
                                     <constraint firstItem="2Jj-Lk-bOp" firstAttribute="leading" secondItem="1ZL-pG-Rdm" secondAttribute="trailing" id="T8F-Os-e1Y"/>
@@ -390,24 +387,36 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vu5-WK-5Cb" id="Ah5-eD-axD"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-yG-v4I">
                                         <rect key="frame" x="0.0" y="90" width="375" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vu5-WK-5Cb" id="qf5-b3-36u"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-Ti-E1L">
                                         <rect key="frame" x="0.0" y="135" width="375" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vu5-WK-5Cb" id="Frf-Zn-v3H"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-df-oC5">
                                         <rect key="frame" x="0.0" y="45" width="375" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Vu5-WK-5Cb" id="QO3-ky-OG4"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -415,6 +424,7 @@
                                     <constraint firstItem="WIm-df-oC5" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="2jg-Wb-Wy2"/>
                                     <constraint firstItem="sQB-yG-v4I" firstAttribute="height" secondItem="CnU-8x-4lP" secondAttribute="height" id="7WY-gb-Whx"/>
                                     <constraint firstItem="WIm-df-oC5" firstAttribute="top" secondItem="CnU-8x-4lP" secondAttribute="bottom" id="7at-xb-cDb"/>
+                                    <constraint firstAttribute="height" constant="180" id="9aG-rU-Eyk"/>
                                     <constraint firstItem="CnU-8x-4lP" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="AWz-0w-PFx"/>
                                     <constraint firstItem="CnU-8x-4lP" firstAttribute="top" secondItem="hl1-DO-QWq" secondAttribute="top" id="BSP-kY-5sg"/>
                                     <constraint firstAttribute="trailing" secondItem="WIm-df-oC5" secondAttribute="trailing" id="Cyw-hK-JNa"/>
@@ -475,7 +485,6 @@
                             <constraint firstAttribute="trailing" secondItem="ryD-X7-FlF" secondAttribute="trailing" id="2Ml-gf-FeM"/>
                             <constraint firstAttribute="trailing" secondItem="I05-AL-bht" secondAttribute="trailing" id="2Yq-kK-tCl"/>
                             <constraint firstItem="Zmq-20-rHv" firstAttribute="top" secondItem="ryD-X7-FlF" secondAttribute="bottom" id="CC9-y7-J8r"/>
-                            <constraint firstItem="Zmq-20-rHv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="02z-Gc-6lD" secondAttribute="top" constant="150" id="WD3-gG-gzZ"/>
                             <constraint firstItem="hl1-DO-QWq" firstAttribute="leading" secondItem="02z-Gc-6lD" secondAttribute="leading" id="ace-7z-5Fc"/>
                             <constraint firstItem="PdY-bj-mAm" firstAttribute="top" secondItem="I05-AL-bht" secondAttribute="bottom" id="cZg-3y-jHV"/>
                             <constraint firstAttribute="trailing" secondItem="hl1-DO-QWq" secondAttribute="trailing" id="euj-1N-sJK"/>
@@ -491,6 +500,13 @@
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="fNameTF" destination="lKs-Ti-E1L" id="fY1-Eq-Pf2"/>
+                        <outlet property="kayConst" destination="wu0-y8-b1b" id="9Fg-G9-jMh"/>
+                        <outlet property="mailTF" destination="CnU-8x-4lP" id="zRl-wR-7jD"/>
+                        <outlet property="nameTF" destination="sQB-yG-v4I" id="f8N-5G-MAA"/>
+                        <outlet property="passwordTF" destination="WIm-df-oC5" id="dqO-9z-464"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zms-v7-S2I" sceneMemberID="firstResponder"/>
             </objects>

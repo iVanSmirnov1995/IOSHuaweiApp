@@ -11,4 +11,11 @@
 @interface ISRegVC : UIViewController
 - (IBAction)log:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *kayConst;
+@property (weak, nonatomic) IBOutlet UITextField *mailTF;
+@property (weak, nonatomic) IBOutlet UITextField *nameTF;
+@property (weak, nonatomic) IBOutlet UITextField *fNameTF;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTF;
+
+
 @end

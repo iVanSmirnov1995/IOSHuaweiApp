@@ -58,7 +58,7 @@
     
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
-        self.keyboardCost.constant=150.f;
+        self.keyboardCost.constant=100.f;
         [self.view layoutIfNeeded];
         
         NSLog(@"gawrg");
