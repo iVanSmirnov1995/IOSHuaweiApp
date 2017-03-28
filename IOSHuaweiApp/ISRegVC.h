@@ -17,5 +17,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *fNameTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *anTextFs;
+@property (weak, nonatomic) IBOutlet UIButton *regBut;
+@property (weak, nonatomic) IBOutlet UIButton *registButton;
+@property (weak, nonatomic) IBOutlet UIButton *infoButton;
 
 @end

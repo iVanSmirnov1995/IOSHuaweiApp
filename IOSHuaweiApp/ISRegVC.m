@@ -11,6 +11,7 @@
 
 @interface ISRegVC ()
 
+
 @end
 
 @implementation ISRegVC
@@ -18,7 +19,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    for (UITextField* tf in self.anTextFs) {
+        
+        tf.alpha=0;
+    }
+    [self.regBut setBackgroundColor:[UIColor whiteColor]];
+    self.infoButton.alpha=0;
+    UIColor* c=[UIColor colorWithRed:255.f/255.f green:94.f/255.f blue:86.f/255.f alpha:1];
+    [self.registButton setTitleColor:c forState:UIControlStateNormal];
+    
+    
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        
+        [self.regBut setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        UIColor* c=[UIColor colorWithRed:255.f/255.f green:94.f/255.f blue:86.f/255.f alpha:1];
+        UIColor* c2=[UIColor colorWithRed:119.f/255.f green:119.f/255.f blue:119.f/255.f alpha:1];
+        [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.regBut setBackgroundColor:c];
+        
+        self.infoButton.alpha=1;
+        
+        for (UITextField* tf in self.anTextFs) {
+            
+            tf.alpha=1;
+        }
+        
+        
+        
+        
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

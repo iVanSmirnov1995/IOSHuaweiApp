@@ -85,7 +85,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="s1V-ZP-3ea"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-3T-fwL">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-3T-fwL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="fgO-LH-4G6"/>
@@ -122,7 +122,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Присоединяйтесь к Huawei">
+                                        <state key="normal" title="Войти">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -171,9 +171,13 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="botCon" destination="dDh-dj-XIr" id="chJ-I6-d0o"/>
+                        <outlet property="heightLabC" destination="ARZ-1v-iCw" id="iwG-Mq-Rn7"/>
+                        <outlet property="infoButt" destination="D2f-CK-b6h" id="3Ig-Xp-jb4"/>
                         <outlet property="keyboardCost" destination="UXA-88-hLH" id="8el-Fb-KJm"/>
                         <outlet property="logButton" destination="saV-Bx-YkE" id="3qM-ej-CeI"/>
                         <outlet property="login" destination="R2B-3T-fwL" id="uKL-Ze-4cw"/>
+                        <outlet property="loginButton" destination="pa7-pz-s5D" id="GOf-y3-Jbd"/>
                         <outlet property="password" destination="7pf-m5-zBJ" id="Mxl-hb-oD5"/>
                         <outlet property="regButton" destination="gku-hU-QHy" id="7xf-cS-5ra"/>
                     </connections>
@@ -379,7 +383,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-DO-QWq">
                                 <rect key="frame" x="0.0" y="250" width="375" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Емайл" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnU-8x-4lP">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnU-8x-4lP">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="VhI-JR-EG0"/>
@@ -444,15 +448,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I05-AL-bht">
                                 <rect key="frame" x="0.0" y="430" width="375" height="237"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-Qo-xrk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-Qo-xrk">
                                         <rect key="frame" x="8" y="26" width="359" height="44"/>
-                                        <color key="backgroundColor" red="1" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.36862745098039218" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="bee-DC-VUf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Войти">
+                                        <state key="normal" title="Присоединяйтесь к Huawei">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -502,10 +506,15 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="fNameTF" destination="lKs-Ti-E1L" id="fY1-Eq-Pf2"/>
+                        <outlet property="infoButton" destination="tqq-XV-0VU" id="uig-el-uFy"/>
                         <outlet property="kayConst" destination="wu0-y8-b1b" id="9Fg-G9-jMh"/>
                         <outlet property="mailTF" destination="CnU-8x-4lP" id="zRl-wR-7jD"/>
                         <outlet property="nameTF" destination="sQB-yG-v4I" id="f8N-5G-MAA"/>
                         <outlet property="passwordTF" destination="WIm-df-oC5" id="dqO-9z-464"/>
+                        <outlet property="regBut" destination="2Jj-Lk-bOp" id="XKd-Rm-zoI"/>
+                        <outlet property="registButton" destination="VPF-Qo-xrk" id="Rd5-xE-QBq"/>
+                        <outletCollection property="anTextFs" destination="sQB-yG-v4I" id="u5V-ti-yKO"/>
+                        <outletCollection property="anTextFs" destination="lKs-Ti-E1L" id="u3g-Lz-ZUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zms-v7-S2I" sceneMemberID="firstResponder"/>

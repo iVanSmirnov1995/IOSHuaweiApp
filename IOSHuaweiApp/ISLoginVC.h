@@ -15,5 +15,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *keyboardCost;
 @property (weak, nonatomic) IBOutlet UITextField *login;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightLabC;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *botCon;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *infoButt;
 
 @end

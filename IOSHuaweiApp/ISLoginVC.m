@@ -40,12 +40,32 @@
 - (IBAction)reg:(UIButton *)sender {
     
    ISRegVC* vc=[self.storyboard instantiateViewControllerWithIdentifier:@"reg"];
-   [self presentViewController:vc animated:NO completion:^{
-       
-       
-       
-       
-   }];
+    UITextField* name=[[UITextField alloc]init];
+    UITextField* fame=[[UITextField alloc]init];
+    name.borderStyle=UITextBorderStyleNone;
+    fame.borderStyle=UITextBorderStyleNone;
+    
+    [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.keyboardCost.constant=250.f;
+        self.heightLabC.constant=180;
+        self.botCon.constant=90;
+        [self.logButton setBackgroundColor:[UIColor whiteColor]];
+        UIColor* c=[UIColor colorWithRed:119.f/255.f green:119.f/255.f blue:119.f/255.f alpha:1];
+        UIColor* c2=[UIColor colorWithRed:255.f/255.f green:94.f/255.f blue:86.f/255.f alpha:1];
+        [self.logButton setTitleColor:c forState:UIControlStateNormal];
+        [self.loginButton setTitleColor:c2 forState:UIControlStateNormal];
+        [self.infoButt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        
+        [self.view layoutIfNeeded];
+        
+    } completion:^(BOOL finished) {
+        
+        [self presentViewController:vc animated:NO completion:^{
+        }];
+        
+    }];
+    
     
 }
 
