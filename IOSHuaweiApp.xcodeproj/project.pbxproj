@@ -16,6 +16,8 @@
 		D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */; };
 		D31CA4261E899FDB00202DA3 /* IOSHuaweiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4251E899FDB00202DA3 /* IOSHuaweiAppTests.m */; };
 		D31CA4311E899FDC00202DA3 /* IOSHuaweiAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */; };
+		D34C899A1E8A314F002CCD61 /* ISLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C89991E8A314F002CCD61 /* ISLoginVC.m */; };
+		D34C899D1E8A338F002CCD61 /* ISRegVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C899C1E8A338F002CCD61 /* ISRegVC.m */; };
 		F5D813DE1E89A4B400A63E55 /* UserAccountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */; };
 		F5D813E11E89A9BF00A63E55 /* SupportStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */; };
 		F5D813E41E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */; };
@@ -57,6 +59,10 @@
 		D31CA42C1E899FDC00202DA3 /* IOSHuaweiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSHuaweiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31CA4301E899FDC00202DA3 /* IOSHuaweiAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSHuaweiAppUITests.m; sourceTree = "<group>"; };
 		D31CA4321E899FDC00202DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34C89981E8A314F002CCD61 /* ISLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISLoginVC.h; sourceTree = "<group>"; };
+		D34C89991E8A314F002CCD61 /* ISLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISLoginVC.m; sourceTree = "<group>"; };
+		D34C899B1E8A338F002CCD61 /* ISRegVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRegVC.h; sourceTree = "<group>"; };
+		D34C899C1E8A338F002CCD61 /* ISRegVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRegVC.m; sourceTree = "<group>"; };
 		F5D813DD1E89A4B400A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserAccountStoryboard.storyboard; sourceTree = "<group>"; };
 		F5D813E01E89A9BF00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SupportStoryboard.storyboard; sourceTree = "<group>"; };
 		F5D813E31E89AB0A00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LocationHuaweiStoryboard.storyboard; sourceTree = "<group>"; };
@@ -116,6 +122,10 @@
 				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
 				D31CA40F1E899FDB00202DA3 /* ViewController.m */,
 				D31CA4111E899FDB00202DA3 /* Main.storyboard */,
+				D34C89981E8A314F002CCD61 /* ISLoginVC.h */,
+				D34C89991E8A314F002CCD61 /* ISLoginVC.m */,
+				D34C899B1E8A338F002CCD61 /* ISRegVC.h */,
+				D34C899C1E8A338F002CCD61 /* ISRegVC.m */,
 				F5D813E81E89AD0B00A63E55 /* Storyboards */,
 				D31CA4171E899FDB00202DA3 /* Assets.xcassets */,
 				D31CA4191E899FDB00202DA3 /* LaunchScreen.storyboard */,
@@ -304,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31CA4161E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld in Sources */,
+				D34C899D1E8A338F002CCD61 /* ISRegVC.m in Sources */,
+				D34C899A1E8A314F002CCD61 /* ISLoginVC.m in Sources */,
 				D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */,
 				D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */,
 				D31CA40A1E899FDB00202DA3 /* main.m in Sources */,
