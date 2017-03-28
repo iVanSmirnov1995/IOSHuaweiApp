@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BA3BE91E8A606A0049482E /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BA3BE81E8A606A0049482E /* NewsStoryboard.storyboard */; };
+		18BA3BEC1E8A638E0049482E /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA3BEB1E8A638E0049482E /* NewsViewController.m */; };
+		18BA3BEF1E8A6B260049482E /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA3BEE1E8A6B260049482E /* NewsModel.m */; };
+		18BA3BF21E8A6BD40049482E /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA3BF11E8A6BD40049482E /* NewsCell.m */; };
 		D31CA40A1E899FDB00202DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4091E899FDB00202DA3 /* main.m */; };
 		D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40C1E899FDB00202DA3 /* AppDelegate.m */; };
 		D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40F1E899FDB00202DA3 /* ViewController.m */; };
@@ -40,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18BA3BE81E8A606A0049482E /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsStoryboard.storyboard; sourceTree = "<group>"; };
+		18BA3BEA1E8A638E0049482E /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		18BA3BEB1E8A638E0049482E /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		18BA3BED1E8A6B260049482E /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		18BA3BEE1E8A6B260049482E /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		18BA3BF01E8A6BD40049482E /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		18BA3BF11E8A6BD40049482E /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		D31CA4051E899FDB00202DA3 /* IOSHuaweiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSHuaweiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31CA4091E899FDB00202DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D31CA40B1E899FDB00202DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18BA3BE71E8A600B0049482E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				18BA3BE81E8A606A0049482E /* NewsStoryboard.storyboard */,
+				18BA3BEA1E8A638E0049482E /* NewsViewController.h */,
+				18BA3BEB1E8A638E0049482E /* NewsViewController.m */,
+				18BA3BED1E8A6B260049482E /* NewsModel.h */,
+				18BA3BEE1E8A6B260049482E /* NewsModel.m */,
+				18BA3BF01E8A6BD40049482E /* NewsCell.h */,
+				18BA3BF11E8A6BD40049482E /* NewsCell.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		D31CA3FC1E899FDB00202DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +136,7 @@
 		D31CA4071E899FDB00202DA3 /* IOSHuaweiApp */ = {
 			isa = PBXGroup;
 			children = (
+				18BA3BE71E8A600B0049482E /* News */,
 				D31CA40B1E899FDB00202DA3 /* AppDelegate.h */,
 				D31CA40C1E899FDB00202DA3 /* AppDelegate.m */,
 				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
@@ -278,6 +304,7 @@
 				D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */,
 				F5D813E41E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard in Resources */,
 				D31CA4181E899FDB00202DA3 /* Assets.xcassets in Resources */,
+				18BA3BE91E8A606A0049482E /* NewsStoryboard.storyboard in Resources */,
 				D31CA4131E899FDB00202DA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +332,10 @@
 			files = (
 				D31CA4161E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld in Sources */,
 				D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */,
+				18BA3BEC1E8A638E0049482E /* NewsViewController.m in Sources */,
+				18BA3BF21E8A6BD40049482E /* NewsCell.m in Sources */,
 				D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */,
+				18BA3BEF1E8A6B260049482E /* NewsModel.m in Sources */,
 				D31CA40A1E899FDB00202DA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
