@@ -76,8 +76,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTP-zC-ZOB">
                                 <rect key="frame" x="0.0" y="340" width="375" height="90"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7pf-m5-zBJ">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7pf-m5-zBJ">
+                                        <rect key="frame" x="12" y="45" width="363" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -85,8 +85,8 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="s1V-ZP-3ea"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-3T-fwL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-3T-fwL">
+                                        <rect key="frame" x="12" y="0.0" width="363" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="fgO-LH-4G6"/>
                                         </constraints>
@@ -102,11 +102,11 @@
                                 <constraints>
                                     <constraint firstItem="R2B-3T-fwL" firstAttribute="top" secondItem="dTP-zC-ZOB" secondAttribute="top" id="7sZ-aQ-bAJ"/>
                                     <constraint firstAttribute="height" constant="90" id="ARZ-1v-iCw"/>
-                                    <constraint firstItem="R2B-3T-fwL" firstAttribute="leading" secondItem="dTP-zC-ZOB" secondAttribute="leading" id="Bhh-PT-7Od"/>
+                                    <constraint firstItem="R2B-3T-fwL" firstAttribute="leading" secondItem="dTP-zC-ZOB" secondAttribute="leading" constant="12" id="Bhh-PT-7Od"/>
                                     <constraint firstItem="7pf-m5-zBJ" firstAttribute="top" secondItem="R2B-3T-fwL" secondAttribute="bottom" id="CFO-Sx-gu3"/>
                                     <constraint firstAttribute="trailing" secondItem="7pf-m5-zBJ" secondAttribute="trailing" id="IE6-iF-EdA"/>
                                     <constraint firstAttribute="bottom" secondItem="7pf-m5-zBJ" secondAttribute="bottom" id="dDh-dj-XIr"/>
-                                    <constraint firstItem="7pf-m5-zBJ" firstAttribute="leading" secondItem="dTP-zC-ZOB" secondAttribute="leading" id="ib3-on-Cq0"/>
+                                    <constraint firstItem="7pf-m5-zBJ" firstAttribute="leading" secondItem="dTP-zC-ZOB" secondAttribute="leading" constant="12" id="ib3-on-Cq0"/>
                                     <constraint firstAttribute="trailing" secondItem="R2B-3T-fwL" secondAttribute="trailing" id="kqp-NO-HqP"/>
                                     <constraint firstItem="7pf-m5-zBJ" firstAttribute="height" secondItem="R2B-3T-fwL" secondAttribute="height" id="nH7-1a-rnd"/>
                                 </constraints>
@@ -125,6 +125,9 @@
                                         <state key="normal" title="Войти">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Ise-I7-NNA" kind="presentation" modalTransitionStyle="flipHorizontal" id="zzG-ob-6mz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-CK-b6h">
                                         <rect key="frame" x="56" y="188" width="263" height="31"/>
@@ -383,8 +386,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-DO-QWq">
                                 <rect key="frame" x="0.0" y="250" width="375" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnU-8x-4lP">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnU-8x-4lP">
+                                        <rect key="frame" x="12" y="0.0" width="363" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="VhI-JR-EG0"/>
                                         </constraints>
@@ -395,8 +398,8 @@
                                             <outlet property="delegate" destination="Vu5-WK-5Cb" id="Ah5-eD-axD"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-yG-v4I">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-yG-v4I">
+                                        <rect key="frame" x="12" y="90" width="363" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -404,8 +407,8 @@
                                             <outlet property="delegate" destination="Vu5-WK-5Cb" id="qf5-b3-36u"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-Ti-E1L">
-                                        <rect key="frame" x="0.0" y="135" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-Ti-E1L">
+                                        <rect key="frame" x="12" y="135" width="363" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -413,8 +416,8 @@
                                             <outlet property="delegate" destination="Vu5-WK-5Cb" id="Frf-Zn-v3H"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-df-oC5">
-                                        <rect key="frame" x="0.0" y="45" width="375" height="45"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-df-oC5">
+                                        <rect key="frame" x="12" y="45" width="363" height="45"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -425,15 +428,15 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="WIm-df-oC5" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="2jg-Wb-Wy2"/>
+                                    <constraint firstItem="WIm-df-oC5" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" constant="12" id="2jg-Wb-Wy2"/>
                                     <constraint firstItem="sQB-yG-v4I" firstAttribute="height" secondItem="CnU-8x-4lP" secondAttribute="height" id="7WY-gb-Whx"/>
                                     <constraint firstItem="WIm-df-oC5" firstAttribute="top" secondItem="CnU-8x-4lP" secondAttribute="bottom" id="7at-xb-cDb"/>
                                     <constraint firstAttribute="height" constant="180" id="9aG-rU-Eyk"/>
-                                    <constraint firstItem="CnU-8x-4lP" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="AWz-0w-PFx"/>
+                                    <constraint firstItem="CnU-8x-4lP" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" constant="12" id="AWz-0w-PFx"/>
                                     <constraint firstItem="CnU-8x-4lP" firstAttribute="top" secondItem="hl1-DO-QWq" secondAttribute="top" id="BSP-kY-5sg"/>
                                     <constraint firstAttribute="trailing" secondItem="WIm-df-oC5" secondAttribute="trailing" id="Cyw-hK-JNa"/>
                                     <constraint firstItem="lKs-Ti-E1L" firstAttribute="top" secondItem="sQB-yG-v4I" secondAttribute="bottom" id="GPU-DY-sCy"/>
-                                    <constraint firstItem="sQB-yG-v4I" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="IWq-q0-u5m"/>
+                                    <constraint firstItem="sQB-yG-v4I" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" constant="12" id="IWq-q0-u5m"/>
                                     <constraint firstAttribute="bottom" secondItem="lKs-Ti-E1L" secondAttribute="bottom" id="Io4-8Y-683"/>
                                     <constraint firstItem="lKs-Ti-E1L" firstAttribute="height" secondItem="CnU-8x-4lP" secondAttribute="height" id="QVj-f4-lSK"/>
                                     <constraint firstItem="sQB-yG-v4I" firstAttribute="top" secondItem="WIm-df-oC5" secondAttribute="bottom" id="R0L-I2-fJF"/>
@@ -441,7 +444,7 @@
                                     <constraint firstAttribute="trailing" secondItem="lKs-Ti-E1L" secondAttribute="trailing" id="bTE-cU-cFu"/>
                                     <constraint firstAttribute="trailing" secondItem="sQB-yG-v4I" secondAttribute="trailing" id="fGM-fE-mKQ"/>
                                     <constraint firstAttribute="trailing" secondItem="CnU-8x-4lP" secondAttribute="trailing" id="geg-n8-2c6"/>
-                                    <constraint firstItem="lKs-Ti-E1L" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" id="h97-WE-YyW"/>
+                                    <constraint firstItem="lKs-Ti-E1L" firstAttribute="leading" secondItem="hl1-DO-QWq" secondAttribute="leading" constant="12" id="h97-WE-YyW"/>
                                     <constraint firstItem="WIm-df-oC5" firstAttribute="height" secondItem="CnU-8x-4lP" secondAttribute="height" id="xIq-O0-iuD"/>
                                 </constraints>
                             </view>

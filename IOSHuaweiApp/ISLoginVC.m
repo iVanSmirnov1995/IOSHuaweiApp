@@ -73,8 +73,7 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     
-    
-    
+
     
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
@@ -95,9 +94,18 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     
+    
+    
+    
+    
+    
     if ([textField isEqual:self.login]) {
+        
+        NSString* login=textField.text;
         [self.password becomeFirstResponder];
     } else {
+        
+        NSString* password=textField.text;
         
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             

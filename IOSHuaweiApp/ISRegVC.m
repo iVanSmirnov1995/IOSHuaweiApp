@@ -38,7 +38,6 @@
         
         [self.regBut setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         UIColor* c=[UIColor colorWithRed:255.f/255.f green:94.f/255.f blue:86.f/255.f alpha:1];
-        UIColor* c2=[UIColor colorWithRed:119.f/255.f green:119.f/255.f blue:119.f/255.f alpha:1];
         [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self.regBut setBackgroundColor:c];
         
@@ -99,7 +98,6 @@
         self.kayConst.constant=180.f;
         [self.view layoutIfNeeded];
         
-        NSLog(@"gawrg");
         
     } completion:^(BOOL finished) {
         
@@ -114,17 +112,21 @@
     
     
     if ([textField isEqual:self.mailTF]) {
+        NSString* mail=textField.text;
         [self.passwordTF becomeFirstResponder];
     } else
         if([textField isEqual:self.passwordTF])
         {
+            NSString* password=textField.text;
             [self.nameTF becomeFirstResponder];
         } else
             if ([textField isEqual:self.nameTF]) {
-                
+               NSString* name=textField.text;
+
                [self.fNameTF becomeFirstResponder];
             }else{
         
+                NSString* fName=textField.text;
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
             [textField resignFirstResponder];
