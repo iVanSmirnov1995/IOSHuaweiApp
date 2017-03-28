@@ -12,5 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *logButton;
 @property (weak, nonatomic) IBOutlet UIButton *regButton;
 - (IBAction)reg:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *keyboardCost;
+@property (weak, nonatomic) IBOutlet UITextField *login;
+@property (weak, nonatomic) IBOutlet UITextField *password;
 
 @end

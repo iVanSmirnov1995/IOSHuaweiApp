@@ -9,7 +9,7 @@
 #import "ISLoginVC.h"
 #import "ISRegVC.h"
 
-@interface ISLoginVC ()
+@interface ISLoginVC ()<UITextFieldDelegate>
 
 @end
 
@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     
     
 }
@@ -43,10 +42,59 @@
    ISRegVC* vc=[self.storyboard instantiateViewControllerWithIdentifier:@"reg"];
    [self presentViewController:vc animated:NO completion:^{
        
+       
+       
+       
    }];
     
-    
-    
-    
 }
+
+#pragma mark-UITextFieldDelegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    
+    
+    
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.keyboardCost.constant=150.f;
+        [self.view layoutIfNeeded];
+        
+        NSLog(@"gawrg");
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    
+    return YES;
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    
+    if ([textField isEqual:self.login]) {
+        [self.password becomeFirstResponder];
+    } else {
+        
+        [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            
+            [textField resignFirstResponder];
+            self.keyboardCost.constant=340.f;
+            [self.view layoutIfNeeded];
+            
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+        
+    }
+    
+    
+    return YES;
+}
+
 @end
