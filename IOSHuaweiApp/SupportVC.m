@@ -127,10 +127,11 @@
         [mailCont setSubject:@"Tech support question"];
         
         [mailCont setMessageBody:self.model.problemText isHTML:NO];
+       // [self.navigationController pushViewController:mailCont animated:YES];
+        [self presentViewController:mailCont animated:YES completion:nil];
         
-        [self dismissViewControllerAnimated:YES completion:^{
-            [self presentViewController:mailCont animated:YES completion:nil];
-        }];    }
+    
+    }
     else{
         NSLog(@"app can't send emails");
     }
