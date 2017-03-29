@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633942E21E8AC6AF0085B4F3 /* SupportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 633942E11E8AC6AF0085B4F3 /* SupportVC.m */; };
+		633942E61E8AC90C0085B4F3 /* SupportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 633942E51E8AC90C0085B4F3 /* SupportModel.m */; };
+		633942EA1E8AC9B20085B4F3 /* SupportStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633942E91E8AC9B20085B4F3 /* SupportStoryboard.storyboard */; };
+		63682E551E8B35F700D95323 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63682E541E8B35F700D95323 /* MessageUI.framework */; };
 		D31CA40A1E899FDB00202DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA4091E899FDB00202DA3 /* main.m */; };
 		D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40C1E899FDB00202DA3 /* AppDelegate.m */; };
 		D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31CA40F1E899FDB00202DA3 /* ViewController.m */; };
@@ -40,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		633942E01E8AC6AF0085B4F3 /* SupportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportVC.h; sourceTree = "<group>"; };
+		633942E11E8AC6AF0085B4F3 /* SupportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportVC.m; sourceTree = "<group>"; };
+		633942E41E8AC90C0085B4F3 /* SupportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportModel.h; sourceTree = "<group>"; };
+		633942E51E8AC90C0085B4F3 /* SupportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportModel.m; sourceTree = "<group>"; };
+		633942E91E8AC9B20085B4F3 /* SupportStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SupportStoryboard.storyboard; path = ../SupportStoryboard.storyboard; sourceTree = "<group>"; };
+		63682E541E8B35F700D95323 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D31CA4051E899FDB00202DA3 /* IOSHuaweiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSHuaweiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31CA4091E899FDB00202DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D31CA40B1E899FDB00202DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63682E551E8B35F700D95323 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		633942E31E8AC71C0085B4F3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				633942E01E8AC6AF0085B4F3 /* SupportVC.h */,
+				633942E11E8AC6AF0085B4F3 /* SupportVC.m */,
+				633942E41E8AC90C0085B4F3 /* SupportModel.h */,
+				633942E51E8AC90C0085B4F3 /* SupportModel.m */,
+				633942E91E8AC9B20085B4F3 /* SupportStoryboard.storyboard */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		63682E531E8B35F600D95323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63682E541E8B35F700D95323 /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D31CA3FC1E899FDB00202DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +126,7 @@
 				D31CA4241E899FDB00202DA3 /* IOSHuaweiAppTests */,
 				D31CA42F1E899FDC00202DA3 /* IOSHuaweiAppUITests */,
 				D31CA4061E899FDB00202DA3 /* Products */,
+				63682E531E8B35F600D95323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +147,7 @@
 				D31CA40C1E899FDB00202DA3 /* AppDelegate.m */,
 				D31CA40E1E899FDB00202DA3 /* ViewController.h */,
 				D31CA40F1E899FDB00202DA3 /* ViewController.m */,
+				633942E31E8AC71C0085B4F3 /* Support */,
 				D31CA4111E899FDB00202DA3 /* Main.storyboard */,
 				F5D813E81E89AD0B00A63E55 /* Storyboards */,
 				D31CA4171E899FDB00202DA3 /* Assets.xcassets */,
@@ -273,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5D813E11E89A9BF00A63E55 /* SupportStoryboard.storyboard in Resources */,
+				633942EA1E8AC9B20085B4F3 /* SupportStoryboard.storyboard in Resources */,
 				F5D813E71E89AC6600A63E55 /* NewsStoryboard.storyboard in Resources */,
 				F5D813DE1E89A4B400A63E55 /* UserAccountStoryboard.storyboard in Resources */,
 				D31CA41B1E899FDB00202DA3 /* LaunchScreen.storyboard in Resources */,
@@ -306,7 +340,9 @@
 				D31CA4161E899FDB00202DA3 /* IOSHuaweiApp.xcdatamodeld in Sources */,
 				D31CA4101E899FDB00202DA3 /* ViewController.m in Sources */,
 				D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */,
+				633942E61E8AC90C0085B4F3 /* SupportModel.m in Sources */,
 				D31CA40A1E899FDB00202DA3 /* main.m in Sources */,
+				633942E21E8AC6AF0085B4F3 /* SupportVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
