@@ -26,6 +26,8 @@
 		F5D813E11E89A9BF00A63E55 /* SupportStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */; };
 		F5D813E41E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */; };
 		F5D813E71E89AC6600A63E55 /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D813E51E89AC6600A63E55 /* NewsStoryboard.storyboard */; };
+		F5D813F61E8B104B00A63E55 /* MSUserAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D813F51E8B104B00A63E55 /* MSUserAccountVC.m */; };
+		F5D813F81E8B10CF00A63E55 /* editButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D813F71E8B10CF00A63E55 /* editButton@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,9 @@
 		F5D813E01E89A9BF00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SupportStoryboard.storyboard; sourceTree = "<group>"; };
 		F5D813E31E89AB0A00A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LocationHuaweiStoryboard.storyboard; sourceTree = "<group>"; };
 		F5D813E61E89AC6600A63E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NewsStoryboard.storyboard; sourceTree = "<group>"; };
+		F5D813F41E8B104B00A63E55 /* MSUserAccountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSUserAccountVC.h; path = UserAccount/MSUserAccountVC.h; sourceTree = "<group>"; };
+		F5D813F51E8B104B00A63E55 /* MSUserAccountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSUserAccountVC.m; path = UserAccount/MSUserAccountVC.m; sourceTree = "<group>"; };
+		F5D813F71E8B10CF00A63E55 /* editButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "editButton@3x.png"; path = "UserAccount/editButton@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,7 @@
 		D31CA4071E899FDB00202DA3 /* IOSHuaweiApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5D813F31E8B0F6200A63E55 /* UserAccount */,
 				18BA3BE71E8A600B0049482E /* News */,
 				D31CA40B1E899FDB00202DA3 /* AppDelegate.h */,
 				D31CA40C1E899FDB00202DA3 /* AppDelegate.m */,
@@ -202,9 +208,19 @@
 				F5D813E51E89AC6600A63E55 /* NewsStoryboard.storyboard */,
 				F5D813DF1E89A9BF00A63E55 /* SupportStoryboard.storyboard */,
 				F5D813E21E89AB0A00A63E55 /* LocationHuaweiStoryboard.storyboard */,
-				F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F5D813F31E8B0F6200A63E55 /* UserAccount */ = {
+			isa = PBXGroup;
+			children = (
+				F5D813F71E8B10CF00A63E55 /* editButton@3x.png */,
+				F5D813DC1E89A4B400A63E55 /* UserAccountStoryboard.storyboard */,
+				F5D813F41E8B104B00A63E55 /* MSUserAccountVC.h */,
+				F5D813F51E8B104B00A63E55 /* MSUserAccountVC.m */,
+			);
+			name = UserAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +340,7 @@
 				D31CA4181E899FDB00202DA3 /* Assets.xcassets in Resources */,
 				18BA3BE91E8A606A0049482E /* NewsStoryboard.storyboard in Resources */,
 				D31CA4131E899FDB00202DA3 /* Main.storyboard in Resources */,
+				F5D813F81E8B10CF00A63E55 /* editButton@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +372,7 @@
 				18BA3BEC1E8A638E0049482E /* NewsViewController.m in Sources */,
 				18BA3BF21E8A6BD40049482E /* NewsCell.m in Sources */,
 				D31CA40D1E899FDB00202DA3 /* AppDelegate.m in Sources */,
+				F5D813F61E8B104B00A63E55 /* MSUserAccountVC.m in Sources */,
 				18BA3BEF1E8A6B260049482E /* NewsModel.m in Sources */,
 				D31CA40A1E899FDB00202DA3 /* main.m in Sources */,
 			);
